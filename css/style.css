@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'kionaitalic';
+    src: url('kiona-itallic-webfont.woff2') format('woff2'),
+         url('kiona-itallic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kionaregular';
+    src: url('kiona-regular-webfont.woff2') format('woff2'),
+         url('kiona-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* mobiles first*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#menu-dropdown {
+    position: fixed;
+    width: 500px;
+    max-width: 100%;
+    height: 435px;
+    top: -435px;
+    background: #151719;
+    transition: all 700ms ease-out;
+}
+
+#menu-dropdown.active {
+    top:0px;
+}
+
+#menu-dropdown ul {
+    margin-top: 110px;
+}
+
+#menu-dropdown ul li {
+    text-align: center;
+    margin: 40px 28% ;
+    padding-bottom: 3px;
+    border-bottom:  1px solid rgba(100,100,100, 0.5);
+    list-style: none;
+}
+
+#menu-dropdown ul li a {
+    color: rgba(230,230,230,0.9);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: kionaregular, work sans, Ariel, sans, sans-serif;
+    font-weight: 700;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 500px;
+    height: 90px;
+    background: #151719;
+    z-index: 0;
+}
+
+#logo {
+    position: fixed;
+    top: 0;
+    width: 500px;
+    max-width: 230px;
+}
+
+
+.toggle-btn {
+    position: fixed;
+    right: 35px;
+    top: 25px;
+    z-index: 3;
+}
+
+.toggle-btn  span {
+    display: block;
+    width: 33px;
+    height: 3px;
+    background: rgba(230,230,230,0.9);
+    margin: 7px 0px;
+    z-index: 100;
+}
+
+
+
+
