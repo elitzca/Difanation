@@ -98,5 +98,99 @@ body {
 }
 
 
+/* Styling mobile version */
+
+
+section h1, h2, h3 {
+    font-family: kionaregular, work sans, Ariel, sans, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+section h1 {
+    margin: 50px 0 30px 0;
+}
+
+section h3 {
+    margin: 20px 0;
+}
+
+section img{
+    width: 600px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section p {
+    display: block;
+    margin: auto;
+    max-width: 85%;
+    font-family: Work sans, Ariel, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+
+#allTheWayUp img {
+    max-width: 100%;
+    margin-top: 90px;
+}
+
+#arrow {
+    max-width: 10%;
+    display: block;
+    margin: auto;
+}
+
+.seeMore h3 {
+    margin: 0;
+}
+
+#contacts h1 {
+    margin-bottom: 0;
+}
+
+#container-contacts {
+    display: inherit;
+    position: relative;
+
+}
+
+#contact-box {
+    position: absolute;
+    top: 20px;
+
+}
+
+#contact-box p {
+    background: rgba(0,0,0,0.7);
+    padding: 3px;
+    color: rgba(230,230,230,0.95);
+}
+
+#container-contacts img {
+    margin-bottom: 0;
+}
+
+footer {
+    background: #151719;
+    color: rgba(230,230,230,0.8);
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/****** SCREEN SIZE ********/
+
+@media only screen and (min-width: 450px) {
+
+}
+
 
 
