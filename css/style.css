@@ -163,17 +163,21 @@ section p {
 #contact-box {
     position: absolute;
     top: 20px;
-
+    width: 30em;
+    max-width: 60%;
 }
 
 #contact-box p {
     background: rgba(0,0,0,0.7);
+    border-radius: 3px;
     padding: 3px;
     color: rgba(230,230,230,0.95);
+    width: 100%;
 }
 
 #container-contacts img {
     margin-bottom: 0;
+    display: block;
 }
 
 footer {
@@ -189,6 +193,89 @@ footer p {
 /****** SCREEN SIZE ********/
 
 @media only screen and (min-width: 450px) {
+   #menu-dropdown {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: 43px;
+    background: #151719;
+    top: 0;
+       z-index: 100;
+}
+
+    .nav-links {
+        position: fixed;
+        right: 0;
+    }
+
+ #menu-dropdown.active {
+    top:0px;
+}
+
+#menu-dropdown ul {
+    margin-top: 0;
+    position: fixed;
+}
+
+#menu-dropdown ul li {
+    max-width: 20%;
+    margin: 5px 10px;
+    padding-bottom: 0;
+    border-bottom:  0;
+    display:  inline;
+    float: left;
+    z-index: 20;
+}
+
+#menu-dropdown ul li a {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 0;
+    height: 90px;
+    background: #151719;
+    z-index: 0;
+}
+
+#logo {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    max-width: 120px;
+    z-index: 50;
+}
+
+
+.toggle-btn {
+    display: none;
+    position: fixed;
+    right: 35px;
+    top: 25px;
+    z-index: 3;
+}
+
+.toggle-btn  span {
+    display: block;
+    width: 33px;
+    height: 3px;
+    background: rgba(230,230,230,0.9);
+    margin: 7px 0px;
+    z-index: 100;
+}
+
+    #contact-box {
+    max-width: 40%;
+    top: 60px;
+}
+
+    #contact-box p {
+        padding: 0.5em;
+        font-size: 1.1em;
+    }
 
 }
 
