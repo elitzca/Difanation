@@ -1,13 +1,17 @@
 /* PORTFOLIO */
-.galerry{
-	margin: 10px 50px;
+.gallery{
+	margin: 10px 80px;
 }
-.galerry img{
+.gallery img{
 	padding: 5px;
 	transition: 1s;
+	width:270px;
 }
 .gallery img:hover{
 	transform: scale(1.1);
+}
+.hide{
+	display: none;
 }
 
 
@@ -162,6 +166,7 @@ section p {
     max-width: 10%;
     display: block;
     margin: auto;
+	cursor: pointer;
 }
 
 .seeMore h3 {
