@@ -39,7 +39,10 @@
 
 
     <section id="allTheWayUp">
-        <img src="images/small/video-to-be_600x400.jpg" alt="">
+        <video preload="auto"  controls poster="images/medium/video-cover_1080x612.jpg" >
+            <source src="images/bg_video.mp4" type="video/mp4">
+            <source src="" type="video/ogg">
+        </video>
         <h3> Welcoming text</h3>
         <p> Benvenuti at this wonderful page. Go thru the some of my awesome work and stay tuned cause there is more to come. Peace out!</p>
     </section>
@@ -56,19 +59,23 @@
 
     <section id="services">
         <h1> Services</h1>
-        <img src="images/small/services_600x400.jpg" alt="">
-        <div id="box1">
-            <h2>Build your portfolio</h2>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+        <div id="servicelist">
+
+            <template id="svtemp">
+                <article class="service">
+                    <div id="background-image">
+                        <h1>Title</h1>
+                        <div class="description"> bla bla</div>
+                    </div>
+                </article>
+            </template>
+
         </div>
-        <div id="box2">
-            <h2>A photographer for your agency</h2>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-        </div>
-        <div id="box3">
-            <h2>Promote your brand</h2>
-            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
-        </div>
+
+
+
+
     </section>
 
     <section id="portfolio">
@@ -84,7 +91,7 @@
 
         <div class="seeMore">
             <h3>See more</h3>
-            <svg id="arrow"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg id="arrow-portfolio"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
             <style type="text/css">
                 .st0{fill:#3F3D3D;}
