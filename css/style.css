@@ -140,7 +140,7 @@ section p {
     margin-top: 90px;
 }
 
-#arrow {
+#arrow-portfolio {
     max-width: 10%;
     display: block;
     margin: auto;
@@ -190,6 +190,19 @@ footer p {
     text-align: center;
 }
 
+#allTheWayUp video {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+/**** Magic goes here /json/ - hopefully! *********/
+.service {
+    border: 1px solid black;
+}
+
+
+
 /****** SCREEN SIZE ********/
 
 @media only screen and (min-width: 450px) {
@@ -197,13 +210,15 @@ footer p {
     position: fixed;
     width: 100%;
     max-width: 100%;
-    height: 43px;
+    height: 53px;
     background: #151719;
     top: 0;
-       z-index: 100;
+    z-index: 100;
 }
 
     .nav-links {
+        max-width: 70%;
+        width: 2000px;
         position: fixed;
         right: 0;
     }
@@ -219,16 +234,17 @@ footer p {
 
 #menu-dropdown ul li {
     max-width: 20%;
-    margin: 5px 10px;
+    margin: 1.9% 5%;
     padding-bottom: 0;
     border-bottom:  0;
     display:  inline;
     float: left;
     z-index: 20;
+
 }
 
 #menu-dropdown ul li a {
-    font-size: 15px;
+    font-size: 1.1em;
     font-weight: 100;
 }
 
@@ -243,9 +259,9 @@ footer p {
 
 #logo {
     position: fixed;
-    top: 0;
-    left: 20px;
-    max-width: 120px;
+    top: -3px;
+    left: 80px;
+    max-width: 150px;
     z-index: 50;
 }
 
