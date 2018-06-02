@@ -28,6 +28,7 @@ body {
     padding: 0;
 }
 
+/******** HAMBURGER MENU********/
 
 #menu-dropdown {
     position: fixed;
@@ -100,6 +101,9 @@ body {
 
 /* Styling mobile version */
 
+section {
+    max-width: 100%;
+}
 
 section h1, h2, h3 {
     font-family: kionaregular, work sans, Ariel, sans, sans-serif;
@@ -134,11 +138,61 @@ section p {
 
 }
 
+/**** VIDEO   *****/
 
-#allTheWayUp img {
-    max-width: 100%;
+#allTheWayUp {
     margin-top: 90px;
 }
+
+#allTheWayUp video {
+    max-width: 100%;
+    width: 100%;
+}
+
+/******  SERVICE SECTION MEDIA QUERIES  ********/
+
+#servicelist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.service {
+    position: relative;
+}
+
+
+.text-box {
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgba(230,230,230, 1);
+    max-width: 90%;
+    margin-left: 5%;
+}
+
+@media only screen and (min-width: 512px) {
+
+    #servicelist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+}
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #servicelist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+}
+}
+
+/**** PORTFOLIO   *****/
+
 
 #arrow-portfolio {
     max-width: 10%;
@@ -149,6 +203,46 @@ section p {
 .seeMore h3 {
     margin: 0;
 }
+
+/**** REVIEWS   *****/
+
+.quotation {
+    display: block;
+    max-width: 5em;
+    margin: auto;
+}
+
+.slide p {
+    margin: 3em 3em;
+    text-align: center;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider .yet-another-container div {
+    width: 33%;
+    float: left;
+}
+
+.slider .yet-another-container {
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    animation: slideMe 10s  steps(3) infinite ;
+}
+
+@keyframes slideMe {
+    to {
+        left: -300%;
+    }
+}
+
+
+
+/**** CONTACTS   *****/
 
 #contacts h1 {
     margin-bottom: 0;
@@ -190,22 +284,16 @@ footer p {
     text-align: center;
 }
 
-#allTheWayUp video {
-    max-width: 100%;
-    width: 100%;
-}
 
-
-/**** Magic goes here /json/ - hopefully! *********/
-.service {
-    border: 1px solid black;
-}
 
 
 
 /****** SCREEN SIZE ********/
 
 @media only screen and (min-width: 450px) {
+
+    /**** NAV   *****/
+
    #menu-dropdown {
     position: fixed;
     width: 100%;
@@ -214,6 +302,7 @@ footer p {
     background: #151719;
     top: 0;
     z-index: 100;
+    transition: none;
 }
 
     .nav-links {
@@ -282,6 +371,14 @@ footer p {
     margin: 7px 0px;
     z-index: 100;
 }
+
+    /**** VIDEO   *****/
+
+    #allTheWayUp {
+        margin-top: 53px;
+    }
+
+    /**** CONTACTS   *****/
 
     #contact-box {
     max-width: 40%;

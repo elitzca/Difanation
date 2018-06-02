@@ -19,7 +19,7 @@ $(document).ready(function() {
 });
 
 function fetchServices () {
-    fetch("http://elitzca.eu/kea/wordpress/wp-json/wp/v2/posts")
+    fetch("http://elitzca.eu/kea/wordpress/wp-json/wp/v2/posts?_embed")
         .then(e => e.json())
         .then(showServices)
 }
@@ -30,7 +30,7 @@ function showServices(data){
 }
 
 function showSingleService (aService) {
-    //console.log(aService);
+    //console.log(aService._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url);
     let template = document.querySelector("#svtemp").content;
     let clone = template.cloneNode(true);
 
@@ -38,7 +38,7 @@ function showSingleService (aService) {
 
     clone.querySelector(".description").innerHTML = aService.content.rendered;
 
-    //clone.querySelector("#background-image").innerHTML
+    clone.querySelector("img").setAttribute("src", aService._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url)
 
     let servicelist = document.querySelector("#servicelist");
     servicelist.appendChild(clone);
