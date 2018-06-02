@@ -1,3 +1,24 @@
+/* PORTFOLIO */
+.gallery{
+	margin: 10px 80px;
+}
+.gallery img{
+	padding: 5px;
+	transition: 1s;
+	width:270px;
+}
+.gallery img:hover{
+	transform: scale(1.1);
+}
+.hide{
+	display: none;
+}
+
+
+
+
+
+
 @font-face {
     font-family: 'kionaitalic';
     src: url('kiona-itallic-webfont.woff2') format('woff2'),
@@ -15,6 +36,7 @@
     font-style: normal;
 
 }
+
 
 /* mobiles first*/
 
@@ -198,6 +220,10 @@ section p {
     max-width: 10%;
     display: block;
     margin: auto;
+	cursor: pointer;
+}
+.rotate{
+	transform: rotate(180deg);
 }
 
 .seeMore h3 {
