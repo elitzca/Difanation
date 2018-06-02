@@ -168,6 +168,9 @@ section p {
     margin: auto;
 	cursor: pointer;
 }
+.rotate{
+	transform: rotate(180deg);
+}
 
 .seeMore h3 {
     margin: 0;
